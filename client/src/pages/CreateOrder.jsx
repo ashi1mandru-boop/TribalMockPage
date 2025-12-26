@@ -1419,7 +1419,6 @@ const [orderData, setOrderData] = useState(() => getFromStorage('orderData', {
   dispatchPlace: "",
   dispatchDate: "",
   dispatchTime: "",
-  orderPlacedBy: "",
   priority: "",
   note: "",
   qcSpecifications: [],
