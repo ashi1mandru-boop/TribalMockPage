@@ -84,7 +84,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter >
+        <WouterRouter base="/TribalMockPage">
        
         <Toaster />
         <AppRouter />

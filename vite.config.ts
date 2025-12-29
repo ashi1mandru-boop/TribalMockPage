@@ -4,8 +4,10 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
-  //  base:"/Tribal-Deploy/",
-   base:"/TribalMockPage/",
+  // FIXED: Added the : '/' at the end. 
+  // This ensures that on your local machine, the app runs at the root (/)
+  base: process.env.NODE_ENV === 'production' ? '/TribalMockPage/' : '/',
+
   plugins: [
     react(),
     runtimeErrorOverlay(),
